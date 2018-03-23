@@ -1,10 +1,10 @@
 import React from "react";
 import "./Navbar.css";
 
-const Navbar = props => (
+export const Navbar = props => (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul className="navbar-nav mr-auto">
       <li className="nav-item">
         <a className="nav-link" href="/">Pokémon Game </a>
       </li>
