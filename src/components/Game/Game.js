@@ -5,13 +5,15 @@ import {PokemonCard} from "../PokemonCard";
 import pokemons from "../../pokemons.json";
 
 
-export default class Game extends Component {
-    state = {
+export default class Game extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
         pokemons: pokemons,
         score: 0,
         highestScore: 0
     };
-
+  }
 
 // const App = () => (
 //   <Wrapper>
@@ -29,6 +31,7 @@ export default class Game extends Component {
 
 
 //shuffled.foreach => (card)
+
 
 
 
