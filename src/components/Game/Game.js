@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {Navbar} from "../Navbar";
+import './Game.css';
 import {Wrapper} from "../Wrapper";
 import {PokemonCard} from "../PokemonCard";
 import pokemons from "../../pokemons.json";
@@ -28,6 +29,7 @@ export default class Game extends React.Component {
         <h2> To play, you just need to click on the images below. Be carefull to not click at the same image twice.</h2>
         <h2> Have Fun!!!</h2>
       </div>
+      <div className="col-md-4 flex">
           {this.state.pokemons.map((pokemon, index) =>{
             return <PokemonCard
               key={index}
@@ -40,8 +42,10 @@ export default class Game extends React.Component {
               }}
               />
               }
+              
             )
           }
+          </div>
         </Wrapper>
 			</div>
 		)
